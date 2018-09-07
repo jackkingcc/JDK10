@@ -10,6 +10,7 @@ public class StreamTest {
         String[] s = {"aaa","bbb","ccc"};
         List<String> list = Arrays.asList(s);
         Stream<String> lStream=list.stream();
+        Stream<String> parlStream = list.parallelStream();
         lStream.filter(string -> !string.contains("s")).forEach(System.out::println);
     }
 }
