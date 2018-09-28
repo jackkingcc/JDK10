@@ -29,4 +29,4 @@ Channel
 3.SocketChannel
 4.ServerSocketChannel
 
-Channel连接的另一端永远是Buffer,它通过Channel读取或写进数据。以数据的种类，可分为ByteBuffer(1个字节）,CharBuffer（2个字节）,ShortBuffer，IntBuffer（4个字节）,LongBuffer,DoubleBuffer,FloatBuffer
+Channel连接的另一端永远是Buffer,它通过Channel读取或写进数据。以数据的种类，可分为ByteBuffer(1个字节）,CharBuffer（2个字节）,ShortBuffer（2字节），IntBuffer（4个字节）,LongBuffer（8字节）,DoubleBuffer（8字节，指数11位）,FloatBuffer（4字节，指数8位）
